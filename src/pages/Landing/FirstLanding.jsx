@@ -11,7 +11,13 @@ const FirstLanding = () => {
           color="black"
           weight={5}
           font="DM"
-          value="A new way to learn languages."
+          value={
+            <>
+              A new way to learn languages
+              <span style={{ color: '#5956E9' }}>.</span>
+            </>
+          }
+          extraClass="tracking-tight"
         />
 
         <Typography
@@ -38,7 +44,13 @@ const FirstLanding = () => {
         </div>
 
         <div className="flex flex-col gap-7 mt-4">
-          <Typography size={'3xl'} color="black" weight={5} value="Mila speaks :" />
+          <Typography
+            size={'3xl'}
+            color="black"
+            weight={5}
+            value="Mila speaks :"
+            extraClass="tracking-tight"
+          />
           <div className="flex gap-4 items-center">
             {['uk', 'spain', 'france', 'germany', 'china', 'japan'].map((country, index) => (
               <img
@@ -53,7 +65,7 @@ const FirstLanding = () => {
         </div>
       </div>
 
-      <div className="pt-14" style={{ width: '707px' }}>
+      <div className="pt-14" style={{ width: '607px' }}>
         <img src="./assets/robot.png" alt="robot" className="ml-14" />
 
         <div

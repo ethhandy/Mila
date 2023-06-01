@@ -35,7 +35,12 @@ const Dropdown = ({
         )}
       >
         <a href={items[0].to}>
-          <p className={cn('text-base', 'font-medium')}>{items[0].value}</p>
+          <p
+            className={cn('text-base', 'font-medium')}
+            style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.04em' }}
+          >
+            {items[0].value}
+          </p>
         </a>
       </div>
     );
@@ -51,7 +56,12 @@ const Dropdown = ({
         >
           <a href={items[0].to}>
             <div className={cn('flex gap-x-3.5 items-center')}>
-              <p className={cn('text-base', 'font-medium mb-2')}>{items[0].value}</p>
+              <p
+                className={cn('text-base', 'font-medium mb-2')}
+                style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.04em' }}
+              >
+                {items[0].value}
+              </p>
               {menuBtn.hasDownIcon === true ? (
                 <p className={cn('text-base pt-0.5', 'font-medium mb-2')}>
                   <AiOutlineDown />

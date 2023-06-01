@@ -14,6 +14,7 @@ const Typography = ({
     size === 'sm' ? 'text-sm max-sm:text-xs' : '',
     size === 'base' ? 'text-base max-sm:text-sm' : '',
     size === 'lg' ? 'text-lg max-sm:text-base' : '',
+    size === 'xl' ? 'text-xl max-sm:text-lg' : '',
     size === '2xl' ? 'text-2xl max-sm:text-lg' : '',
     size === '3xl' ? 'text-3xl max-sm:text-xl' : '',
     size === '7xl' ? 'text-7xl max-sm:text-4xl' : '',

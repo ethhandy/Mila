@@ -15,15 +15,21 @@ const SecondLanding = () => {
     >
       <div className="flex justify-center">
         <div className="flex flex-col" style={{ width: '1075px' }}>
-          <div className="flex pt-40 gap-44">
-            <Typography size="xl" weight={7} value="Features" color="white" />
-
+          <div className="flex pt-40">
+            <Typography
+              size="xl"
+              weight={7}
+              value="Features"
+              color="white"
+              extraClass="tracking-tight pr-44"
+            />
             <div className="flex flex-col gap-10">
               <Typography
                 size="7xl"
                 weight={5}
                 value="The most advanced AI Speaking technology"
                 color="white"
+                extraClass="tracking-tight"
               />
               <Typography
                 size="lg"
@@ -51,8 +57,20 @@ const SecondLanding = () => {
               <Typography value="03" size="sm" color="white" weight={5} opacity={0.3} />
             </div>
             <div className="grid grid-cols-2 w-full">
-              <Typography size="2xl" color="white" weight={5} value="Express yourself freely" />
-              <Typography size="2xl" color="white" weight={5} value="Perfect your accent" />
+              <Typography
+                size="2xl"
+                color="white"
+                weight={5}
+                value="Express yourself freely"
+                extraClass="tracking-tighter"
+              />
+              <Typography
+                size="2xl"
+                color="white"
+                weight={5}
+                value="Perfect your accent"
+                extraClass="tracking-tighter"
+              />
             </div>
           </div>
 
@@ -66,6 +84,7 @@ const SecondLanding = () => {
                 opacity={0.5}
                 value="Practice communicating in English about any topic you want."
                 font="Poppins"
+                extraClass="tracking-tight pr-24"
               />
               <Typography
                 size="base"
@@ -74,6 +93,7 @@ const SecondLanding = () => {
                 opacity={0.5}
                 value="Learn how to pronounce words correctly and clearly, with real-time voice feedback.​"
                 font="Poppins"
+                extraClass="tracking-tight pr-24"
               />
             </div>
           </div>
@@ -103,6 +123,7 @@ const SecondLanding = () => {
                 opacity={0.5}
                 value="Find out more"
                 font="Poppins"
+                extraClass="tracking-tighter"
               />
               <div className="flex gap-4 items-center">
                 <div className="w-10 " style={{ height: '1px', border: '1px solid white' }}></div>
@@ -112,6 +133,7 @@ const SecondLanding = () => {
                   weight={4}
                   value="Find out more"
                   font="Poppins"
+                  extraClass="tracking-tighter"
                 />
               </div>
             </div>
