@@ -1,2 +1,10 @@
 export { default as Header } from './Header';
-export { FirstLanding, SecondLanding } from './Landing';
+export {
+  Banner,
+  Features,
+  Signup,
+  Mission,
+  Challenges,
+  Advantage,
+  Recommendation
+} from './Landing';

@@ -4,7 +4,7 @@ const Button = ({
   value = '',
 
   size = 'lg',
-  color = 'primary',
+  color = '',
 
   to = '',
   clickHandler = () => {},

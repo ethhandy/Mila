@@ -3,9 +3,9 @@ import { Typography } from '../../components/Typography';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
-const SecondLanding = () => {
+const Features = () => {
   return (
-    <div
+    <section
       style={{
         backgroundImage: 'url("./assets/Background.png")',
         minHeight: '1024',
@@ -140,8 +140,8 @@ const SecondLanding = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default SecondLanding;
+export default Features;

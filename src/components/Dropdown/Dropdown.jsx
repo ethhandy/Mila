@@ -5,7 +5,7 @@ import { Typography } from '../Typography';
 import cn from 'classnames';
 
 const getMenuItem = (item) => {
-  const { value, to, customized } = item;
+  const { value, to } = item;
 
   return (
     <a href={to}>

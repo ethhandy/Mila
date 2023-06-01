@@ -1,10 +1,9 @@
 import { Typography } from '../../components/Typography';
-import { Button } from '../../components/Button';
-import { MailBox } from '../../components/Icon';
+import { GetStartedForm } from '../../components/Form';
 
-const FirstLanding = () => {
+const Banner = () => {
   return (
-    <div className="flex gap-16 justify-center">
+    <section className="flex gap-16 justify-center">
       <div className="flex flex-col gap-y-10" style={{ width: '482px' }}>
         <Typography
           size="8xl"
@@ -28,20 +27,7 @@ const FirstLanding = () => {
           font="Poppins"
         />
 
-        <div className="w-full bg-white shadow-md shadow-gray-100 flex justify-between py-1.5 items-center pl-7 pr-2 rounded-lg">
-          <div className="flex gap-2 items-center">
-            {MailBox}
-            <Typography color="gray" size="base" value="Email address" weight={4} font="Poppins" />
-          </div>
-
-          <Button
-            color="purple"
-            size="md"
-            value={
-              <Typography color="white" size="base" value="Get started" weight={5} font="Poppins" />
-            }
-          />
-        </div>
+        <GetStartedForm />
 
         <div className="flex flex-col gap-7 mt-4">
           <Typography
@@ -84,8 +70,8 @@ const FirstLanding = () => {
           <Typography value="Bonjour! Je suis Mila!" size="2xl" color="black" weight={5} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default FirstLanding;
+export default Banner;

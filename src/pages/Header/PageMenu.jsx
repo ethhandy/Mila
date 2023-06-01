@@ -28,13 +28,7 @@ const PageMenu = () => {
         ]}
       />
 
-      <Dropdown
-        items={[
-          { value: 'Explore', hasDownIcon: true },
-          { value: 'English', to: '/explore/english' },
-          { value: 'Japanese', to: '/explore/japanese' }
-        ]}
-      />
+      <Dropdown items={[{ value: 'Explore', hasDownIcon: true }, {}]} />
     </div>
   );
 };
