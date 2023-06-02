@@ -12,6 +12,7 @@ const Button = ({
   isLink = false
 }) => {
   const effectClass = cn(
+    color === 'white' ? 'bg-white shadow-2xl' : '',
     color === 'pink' ? 'bg-[#FAB8C4] hover:bg-[#FCBACA]' : '',
     color === 'purple' ? 'bg-[#5956E9] hover:bg-[#5C5AED]' : ''
   );

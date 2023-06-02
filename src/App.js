@@ -6,7 +6,9 @@ import {
   Mission,
   Challenges,
   Advantage,
-  Recommendation
+  Recommendation,
+  Download,
+  Footer
 } from './pages';
 import { useState, useEffect } from 'react';
 import { ScreenContext } from './contexts';
@@ -46,6 +48,8 @@ function App() {
       <Challenges />
       <Advantage />
       <Recommendation />
+      <Download />
+      <Footer />
     </ScreenContext.Provider>
   );
 }

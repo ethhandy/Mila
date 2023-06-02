@@ -6,5 +6,7 @@ export {
   Mission,
   Challenges,
   Advantage,
-  Recommendation
+  Recommendation,
+  Download,
+  Footer
 } from './Landing';
