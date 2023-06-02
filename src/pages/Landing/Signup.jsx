@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { ScreenContext } from '../../contexts';
 import { GetStartedForm } from '../../components/Form';
+import { Typography } from '../../components/Typography';
 
 const Signup = () => {
   const { width } = useContext(ScreenContext);
@@ -14,6 +15,27 @@ const Signup = () => {
 
       <div className="flex justify-center" style={{ marginTop: '-48px' }}>
         <GetStartedForm extraClass="w-[504px]" />
+      </div>
+
+      <div className="flex flex-col" style={{ marginTop: '-196px' }}>
+        <div className="flex justify-center">
+          <Typography
+            color="black"
+            value="Ready to get started?"
+            size="2xl"
+            weight={5}
+            extraClass="tracking-tighter"
+          />
+        </div>
+        <div className="flex justify-center">
+          <Typography
+            color="black"
+            value="Sign up with your mail"
+            size="2xl"
+            weight={5}
+            extraClass="tracking-tighter"
+          />
+        </div>
       </div>
     </>
   );

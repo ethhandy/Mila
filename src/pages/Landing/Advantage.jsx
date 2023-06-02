@@ -11,7 +11,8 @@ const Advantage = () => {
     <section
       style={{
         backgroundImage: 'url("./assets/Advantage.png")',
-        height: 980 * ratio
+        height: 980 * ratio,
+        marginTop: '-65px'
       }}
       className="bg-cover bg-no-repeat relative"
     >

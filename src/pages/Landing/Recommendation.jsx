@@ -67,6 +67,7 @@ const Recommendation = () => {
                 said: 'Mila makes me practice speaking what I’ve learned which helps me remember better. It’s seriously the best.',
                 totalName: 'Emily',
                 color: '#5956E9',
+                borderColor: '#C75C6F',
                 path: 'Bento'
               },
               {
@@ -87,7 +88,10 @@ const Recommendation = () => {
               <div
                 key={index}
                 className="border-t pt-16"
-                style={{ borderColor: person.color, borderTopWidth: '2px' }}
+                style={{
+                  borderColor: person.borderColor ? person.borderColor : person.color,
+                  borderTopWidth: '2px'
+                }}
               >
                 <Typography
                   value={person.name}

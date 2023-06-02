@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div
             className="flex gap-4 items-center hover:cursor-pointer"
-            onClick={() => scroll.scrollToTop({ delay: 500 })}
+            onClick={() => scroll.scrollToTop({ delay: 200 })}
           >
             {BackToTop}
             <Typography

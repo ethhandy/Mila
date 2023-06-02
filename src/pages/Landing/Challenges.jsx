@@ -11,7 +11,7 @@ const Challenges = () => {
       style={{
         backgroundImage: 'url("./assets/Challenges.png")'
       }}
-      className="bg-auto bg-no-repeat bg-center mb-28 pt-40 pr-24 flex h-[758px]"
+      className="bg-auto bg-no-repeat bg-center pt-40 pr-24 flex h-[758px] relative z-10"
     >
       <div className="w-[432px] flex flex-col" style={{ marginLeft: 714 + (width - 1250) / 2 }}>
         <Typography
