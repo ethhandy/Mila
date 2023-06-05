@@ -1,12 +1,8 @@
-import { useContext } from 'react';
-import { ScreenContext } from '../../contexts';
 import { Typography } from '../../components/Typography';
 
 const Mission = () => {
-  const { width } = useContext(ScreenContext);
-
   return (
-    <section style={{ height: (3684 * width) / 5760 }} className="flex justify-center items-center">
+    <section style={{ height: 921 }} className="flex justify-center items-center">
       <div className="flex flex-col w-[500px] ml-44">
         <Typography
           size="xl"

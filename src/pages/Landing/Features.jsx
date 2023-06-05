@@ -1,17 +1,14 @@
 import { Message, Voice } from '../../components/Icon';
 import { Typography } from '../../components/Typography';
-import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 const Features = () => {
   return (
     <section
       style={{
         backgroundImage: 'url("./assets/Background.png")',
-        minHeight: '1024',
-        marginTop: '-98px'
+        minHeight: '1024'
       }}
-      className="bg-no-repeat bg-cover box-border"
+      className="bg-no-repeat bg-cover box-border d-block "
     >
       <div className="flex justify-center">
         <div className="flex flex-col" style={{ width: '1075px' }}>
@@ -51,11 +48,7 @@ const Features = () => {
           </div>
 
           <div className="flex mt-9">
-            <div className="flex w-80 items-center gap-8">
-              <Typography value="02" size="sm" color="white" weight={5} />
-              <div className="w-10 " style={{ height: '1px', border: '1px solid white' }}></div>
-              <Typography value="03" size="sm" color="white" weight={5} opacity={0.3} />
-            </div>
+            <div className="w-80" />
             <div className="grid grid-cols-2 w-full">
               <Typography
                 size="2xl"
@@ -99,21 +92,7 @@ const Features = () => {
           </div>
 
           <div className="flex mt-16 mb-24">
-            <div className="w-80 flex gap-4">
-              <div
-                className="flex items-center justify-center rounded-full w-10 h-10 text-white hover:cursor-pointer"
-                style={{ border: '1px solid #555555' }}
-              >
-                <HiOutlineArrowNarrowLeft />
-              </div>
-
-              <div
-                className="flex items-center justify-center rounded-full w-10 h-10 text-white hover:cursor-pointer"
-                style={{ border: '1px solid #555555', backgroundColor: '#5956E9' }}
-              >
-                <HiOutlineArrowNarrowRight />
-              </div>
-            </div>
+            <div className="w-80" />
 
             <div className="grid grid-cols-2 w-full items-center">
               <Typography

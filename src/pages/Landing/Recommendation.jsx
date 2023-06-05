@@ -1,8 +1,4 @@
-import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-
 import { Typography } from '../../components/Typography';
-import { IconButton } from '../../components/Button';
 
 const Recommendation = () => {
   return (
@@ -37,20 +33,6 @@ const Recommendation = () => {
               weight={5}
               extraClass="tracking-tighter text-[40px] w-[230px]"
             />
-            <div className="flex gap-4">
-              <IconButton
-                diameter={40}
-                bgColor="#FAB8C4"
-                color="white"
-                Icon={<HiOutlineArrowNarrowLeft width={16} height={16} />}
-              />
-              <IconButton
-                diameter={40}
-                bgColor="#5956E9"
-                color="white"
-                Icon={<HiOutlineArrowNarrowRight width={16} height={16} />}
-              />
-            </div>
           </div>
 
           <div className="gap-y-24 gap-x-6 grid grid-cols-2 col-span-2 pr-32">
