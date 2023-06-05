@@ -55,19 +55,29 @@ function App() {
       <div
         style={{
           backgroundImage: 'url("./assets/Circle.png")',
-          height: (1122 * width) / 1440,
-          minHeight: 1122
+          height: height + 98,
+          backgroundSize: `${width}px ${height + 98}px`
         }}
         className="bg-no-repeat bg-cover z-10 sticky"
       >
         <Header />
         <Banner />
       </div>
+
       <div
         style={{
           marginTop: '-98px'
         }}
+        className="relative"
       >
+        <div
+          className="w-8 h-8 rounded-full bg-[#5956E9] absolute z-10"
+          style={{ top: -((133 * height) / 1024 + 16), left: (691 * width) / 1440 }}
+        />
+        <div
+          className="w-[180px] h-[180px] rounded-full bg-[#FAB8C4] absolute z-10"
+          style={{ top: -90, left: (790 * width) / 1440 }}
+        />
         <Carousel
           responsive={responsive}
           swipeable={true}
