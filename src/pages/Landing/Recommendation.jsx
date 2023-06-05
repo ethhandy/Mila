@@ -4,7 +4,7 @@ const Recommendation = () => {
   return (
     <section className="flex justify-center">
       <div className="w-[1440px] pl-52 pr-20">
-        <div className="flex mt-[508px] relative">
+        <div className="flex mt-[208px] relative">
           <div className="flex gap-6 flex-col">
             <Typography
               value="We are famous"

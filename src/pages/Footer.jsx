@@ -1,5 +1,5 @@
-import { Typography } from '../../components/Typography';
-import { BackToTop } from '../../components/Icon';
+import { Typography } from '../components/Typography';
+import { BackToTop } from '../components/Icon';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
                   color={i === 0 ? 'gray' : 'black'}
                   size="base"
                   font="Poppins"
-                  extraClass={`tracking-tight ${i === 0 ? 'mb-14' : 'mb-4'}`}
+                  extraClass={`tracking-tight ${i === 0 ? 'mb-14' : 'mb-4 hover:cursor-pointer'}`}
                   value={item}
                 />
               ))}

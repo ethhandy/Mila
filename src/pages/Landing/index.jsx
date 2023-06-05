@@ -6,4 +6,3 @@ export { default as Challenges } from './Challenges';
 export { default as Advantage } from './Advantage';
 export { default as Recommendation } from './Recommendation';
 export { default as Download } from './Download';
-export { default as Footer } from './Footer';

@@ -7,6 +7,6 @@ export {
   Challenges,
   Advantage,
   Recommendation,
-  Download,
-  Footer
+  Download
 } from './Landing';
+export { default as Footer } from './Footer';
