@@ -53,7 +53,7 @@ const Banner = () => {
         </div>
 
         <div className="pt-14 w-[708px]">
-          <img src="./assets/Robot.png" alt="robot" className="ml-14" height={453} />
+          <img src="./assets/robot.png" alt="robot" className="ml-14" height={453} />
         </div>
       </div>
     </section>
