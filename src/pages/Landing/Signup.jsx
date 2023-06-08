@@ -1,10 +1,9 @@
-import { useContext } from 'react';
-import { ScreenContext } from '../../contexts';
 import { GetStartedForm } from '../../components/Form';
 import { Typography } from '../../components/Typography';
+import useGlobalStore from '../../state/store';
 
 const Signup = () => {
-  const { width } = useContext(ScreenContext);
+  const [width] = useGlobalStore((state) => [state.width]);
 
   return (
     <>

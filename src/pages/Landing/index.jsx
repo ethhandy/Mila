@@ -8,13 +8,12 @@ import Advantage from './Advantage';
 import Recommendation from './Recommendation';
 import Download from './Download';
 
-import { ScreenContext } from '../../contexts';
-import { useContext } from 'react';
+import useGlobalStore from '../../state/store';
 
 import './landing.css';
 
 const Landing = () => {
-  const { width, height } = useContext(ScreenContext);
+  const [width, height] = useGlobalStore((state) => [state.width, state.height]);
 
   const responsive = {
     superLargeDesktop: {

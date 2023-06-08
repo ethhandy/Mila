@@ -1,10 +1,10 @@
-import { useContext } from 'react';
-import { ScreenContext } from '../../contexts';
 import { Typography } from '../../components/Typography';
 import { Robot } from '../../components/Icon';
 
+import useGlobalStore from '../..//state/store';
+
 const Advantage = () => {
-  const { width } = useContext(ScreenContext);
+  const width = useGlobalStore((state) => state.width);
   const ratio = width / 1440;
 
   return (

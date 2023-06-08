@@ -1,10 +1,14 @@
 import { Header, Banner, Landing, Footer } from './pages';
-import { useState, useEffect } from 'react';
-import { ScreenContext } from './contexts';
+import { useEffect } from 'react';
+import useGlobalStore from './state/store';
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, height, setWidth, setHeight] = useGlobalStore((state) => [
+    state.width,
+    state.height,
+    state.setWidth,
+    state.setHeight
+  ]);
 
   const onResize = () => {
     setWidth(window.innerWidth);
@@ -15,10 +19,11 @@ function App() {
     window.addEventListener('resize', onResize);
 
     return () => window.removeEventListener('resize', onResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <ScreenContext.Provider value={{ width, height }}>
+    <>
       <div
         style={{
           backgroundImage: 'url("./assets/Circle.png")',
@@ -33,7 +38,7 @@ function App() {
 
       <Landing />
       <Footer />
-    </ScreenContext.Provider>
+    </>
   );
 }
 

@@ -1,10 +1,9 @@
-import { useContext } from 'react';
 import { Button } from '../../components/Button';
 import { Typography } from '../../components/Typography';
-import { ScreenContext } from '../../contexts';
+import useGlobalStore from '../../state/store';
 
 const Challenges = () => {
-  const { width } = useContext(ScreenContext);
+  const [width] = useGlobalStore((state) => [state.width]);
 
   return (
     <section
