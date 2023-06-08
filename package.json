@@ -20,7 +20,8 @@
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "react-use": "^17.4.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.3.8"
   },
   "scripts": {
     "start": "react-scripts start",
