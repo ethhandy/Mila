@@ -21,21 +21,24 @@ const Advantage = () => {
           value="Languages Learning Reinvented"
           weight={7}
           size="xl"
-          extraClass="tracking-tight text-[#C75C6F] mb-4"
+          tracking="tight"
+          extraClass="text-[#C75C6F] mb-4"
         />
 
         <Typography
           value="Learn Faster"
           color="blue"
           weight={7}
-          extraClass="tracking-tight text-[144px]"
+          tracking="tight"
+          extraClass="text-[144px]"
         />
 
         <Typography
           value="with Mila"
           color="white"
           weight={7}
-          extraClass={`tracking-tight text-[144px] -mt-8`}
+          tracking="tight"
+          extraClass="text-[144px] -mt-8"
         />
       </div>
       <div
@@ -57,7 +60,7 @@ const Advantage = () => {
             color="white"
             size="base"
             font="Poppins"
-            extraClass="tracking-tighter"
+            tracking="tighter"
             weight={5}
           />
         </div>

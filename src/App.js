@@ -55,8 +55,8 @@ function App() {
       <div
         style={{
           backgroundImage: 'url("./assets/Circle.png")',
-          height: height + 98,
-          backgroundSize: `${width}px ${height + 98}px`
+          height: Math.max(935, height + 98),
+          backgroundSize: `${width}px ${Math.max(935, height + 98)}px`
         }}
         className="bg-no-repeat bg-cover z-10 sticky"
       >

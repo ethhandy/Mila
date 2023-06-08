@@ -24,7 +24,7 @@ const Signup = () => {
             value="Ready to get started?"
             size="2xl"
             weight={5}
-            extraClass="tracking-tighter"
+            tracking="tighter"
           />
         </div>
         <div className="flex justify-center">
@@ -33,7 +33,7 @@ const Signup = () => {
             value="Sign up with your mail"
             size="2xl"
             weight={5}
-            extraClass="tracking-tighter"
+            tracking="tighter"
           />
         </div>
       </div>

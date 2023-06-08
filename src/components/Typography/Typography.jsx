@@ -8,7 +8,8 @@ const Typography = ({
   size = null,
   align = '',
   extraClass = '',
-  font = 'DM'
+  font = 'DM',
+  tracking = ''
 }) => {
   const sizeClass = cn(
     size === 'sm' ? 'text-sm max-sm:text-xs' : '',
@@ -42,6 +43,11 @@ const Typography = ({
     'font-black'
   ];
 
+  const trackingClass = cn(
+    tracking === 'tight' ? 'tracking-tight' : '',
+    tracking === 'tighter' ? 'tracking-tighter' : ''
+  );
+
   return (
     <p
       style={{
@@ -51,6 +57,7 @@ const Typography = ({
       }}
       className={cn(
         sizeClass,
+        trackingClass,
         weightTable[weight],
         align === 'center' ? 'text-center' : '',
         extraClass

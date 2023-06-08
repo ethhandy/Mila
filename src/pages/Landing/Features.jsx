@@ -18,7 +18,8 @@ const Features = () => {
               weight={7}
               value="Features"
               color="white"
-              extraClass="tracking-tight pr-44"
+              tracking="tight"
+              extraClass="pr-44"
             />
             <div className="flex flex-col gap-10">
               <Typography
@@ -26,7 +27,7 @@ const Features = () => {
                 weight={5}
                 value="The most advanced AI Speaking technology"
                 color="white"
-                extraClass="tracking-tight"
+                tracking="tight"
               />
               <Typography
                 size="lg"
@@ -55,14 +56,14 @@ const Features = () => {
                 color="white"
                 weight={5}
                 value="Express yourself freely"
-                extraClass="tracking-tighter"
+                tracking="tighter"
               />
               <Typography
                 size="2xl"
                 color="white"
                 weight={5}
                 value="Perfect your accent"
-                extraClass="tracking-tighter"
+                tracking="tighter"
               />
             </div>
           </div>
@@ -77,7 +78,8 @@ const Features = () => {
                 opacity={0.5}
                 value="Practice communicating in English about any topic you want."
                 font="Poppins"
-                extraClass="tracking-tight pr-24"
+                tracking="tight"
+                extraClass="pr-24"
               />
               <Typography
                 size="base"
@@ -86,7 +88,8 @@ const Features = () => {
                 opacity={0.5}
                 value="Learn how to pronounce words correctly and clearly, with real-time voice feedback.​"
                 font="Poppins"
-                extraClass="tracking-tight pr-24"
+                tracking="tight"
+                extraClass="pr-24"
               />
             </div>
           </div>
@@ -102,7 +105,7 @@ const Features = () => {
                 opacity={0.5}
                 value="Find out more"
                 font="Poppins"
-                extraClass="tracking-tighter"
+                tracking="tighter"
               />
               <div className="flex gap-4 items-center">
                 <div className="w-10 " style={{ height: '1px', border: '1px solid white' }}></div>
@@ -112,7 +115,7 @@ const Features = () => {
                   weight={4}
                   value="Find out more"
                   font="Poppins"
-                  extraClass="tracking-tighter"
+                  tracking="tighter"
                 />
               </div>
             </div>

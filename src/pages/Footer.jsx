@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <div className="flex justify-center">
         <div className="w-[1040px] grid grid-cols-4">
-          <img src="./assets/Logo.png" alt="Logo" height={53} />
+          <img src={require('../assets/Logo.png')} alt="Logo" height={53} />
           {[
             ['Company', 'About us', 'Jobs', 'Press', 'Blog'],
             ['Support', 'Contact us', 'Cookies', 'Privacy & terms', 'Sitemap'],
@@ -20,7 +20,8 @@ const Footer = () => {
                   color={i === 0 ? 'gray' : 'black'}
                   size="base"
                   font="Poppins"
-                  extraClass={`tracking-tight ${i === 0 ? 'mb-14' : 'mb-4 hover:cursor-pointer'}`}
+                  tracking="tight"
+                  extraClass={`${i === 0 ? 'mb-14' : 'mb-4 hover:cursor-pointer'}`}
                   value={item}
                 />
               ))}
@@ -36,7 +37,7 @@ const Footer = () => {
             value="© 2023, Parallel Agency."
             weight={5}
             size="sm"
-            extraClass="tracking-tight"
+            tracking="tight"
           />
 
           <div
@@ -44,13 +45,7 @@ const Footer = () => {
             onClick={() => scroll.scrollToTop({ delay: 200 })}
           >
             {BackToTop}
-            <Typography
-              color="gray"
-              value="Back to top"
-              weight={5}
-              size="sm"
-              extraClass="tracking-tight"
-            />
+            <Typography color="gray" value="Back to top" weight={5} size="sm" tracking="tight" />
           </div>
         </div>
       </div>

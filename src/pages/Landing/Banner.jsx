@@ -17,7 +17,7 @@ const Banner = () => {
                 <span style={{ color: '#5956E9' }}>.</span>
               </>
             }
-            extraClass="tracking-tight"
+            tracking="tight"
           />
 
           <Typography
@@ -32,16 +32,16 @@ const Banner = () => {
 
           <div className="flex flex-col gap-7 mt-4">
             <Typography
-              size={'3xl'}
+              size="3xl"
               color="black"
               weight={5}
               value="Mila speaks :"
-              extraClass="tracking-tight"
+              tracking="tight"
             />
             <div className="flex gap-4 items-center">
               {['uk', 'spain', 'france', 'germany', 'china', 'japan'].map((country, index) => (
                 <img
-                  src={`./assets/countries/${country}.png`}
+                  src={require(`../../assets/countries/${country}.png`)}
                   alt="country"
                   width={64}
                   height={55}
@@ -53,7 +53,7 @@ const Banner = () => {
         </div>
 
         <div className="pt-14 w-[708px]">
-          <img src="./assets/robot.png" alt="robot" className="ml-14" height={453} />
+          <img src={require('../../assets/robot.png')} alt="robot" className="ml-14" height={453} />
         </div>
       </div>
     </section>

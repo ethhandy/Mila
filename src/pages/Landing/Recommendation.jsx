@@ -11,14 +11,15 @@ const Recommendation = () => {
               color="#C75C6F"
               size="xl"
               weight={7}
-              extraClass="tracking-tight"
+              tracking="tight"
             />
             <Typography
               value="Our reviews speak for themselves"
               color="black"
               weight={5}
               size="7xl"
-              extraClass="tracking-tight w-[684px]"
+              tracking="tight"
+              extraClass="w-[684px]"
             />
           </div>
 
@@ -31,7 +32,8 @@ const Recommendation = () => {
               value="What users are saying"
               color="black"
               weight={5}
-              extraClass="tracking-tighter text-[40px] w-[230px]"
+              tracking="tighter"
+              extraClass="text-[40px] w-[230px]"
             />
           </div>
 
@@ -79,18 +81,19 @@ const Recommendation = () => {
                   value={person.name}
                   weight={7}
                   size="xl"
-                  extraClass="tracking-tight"
+                  tracking="tight"
                   color={person.color}
                 />
                 <Typography
                   value={`"${person.said}"`}
                   size="2xl"
                   color="black"
-                  extraClass="tracking-tight mt-8 mb-2.5 h-56"
+                  tracking="tight"
+                  extraClass="mt-8 mb-2.5 h-56"
                 />
                 <div className="flex gap-6">
                   <img
-                    src={`./assets/Recommendations/${person.path}.png`}
+                    src={require(`../../assets/Recommendations/${person.path}.png`)}
                     alt={person.path}
                     className="w-12 h-12"
                   />
@@ -101,13 +104,13 @@ const Recommendation = () => {
                       size="base"
                       color="black"
                       font="Poppins"
-                      extraClass="tracking-tighter"
+                      tracking="tighter"
                     />
                     <Typography
                       value="User of Mila"
                       size="sm"
                       weight={5}
-                      extraClass="tracking-tight"
+                      tracking="tight"
                       color="gray"
                     />
                   </div>

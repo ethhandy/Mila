@@ -16,7 +16,7 @@ const Kit = () => {
             value="Get Started"
             weight={5}
             font="Poppins"
-            extraClass="tracking-tighter"
+            tracking="tighter"
           />
         }
       />

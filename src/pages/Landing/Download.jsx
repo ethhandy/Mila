@@ -14,7 +14,8 @@ const Download = () => {
         size="7xl"
         color="white"
         weight={5}
-        extraClass="tracking-tight text-center w-[890px]"
+        tracking="tight"
+        extraClass="text-center w-[890px]"
       />
       <Typography
         value="We offer a incredible learning experience."
@@ -31,7 +32,7 @@ const Download = () => {
             value="Download now"
             size="base"
             color="blue"
-            extraClass="tracking-tighter"
+            tracking="tighter"
             weight={5}
             font="Poppins"
           />

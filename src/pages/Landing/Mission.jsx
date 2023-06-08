@@ -4,18 +4,13 @@ const Mission = () => {
   return (
     <section style={{ height: 921 }} className="flex justify-center items-center">
       <div className="flex flex-col w-[500px] ml-44">
-        <Typography
-          size="xl"
-          weight={7}
-          extraClass="tracking-tight"
-          color="purple"
-          value="Our mission"
-        />
+        <Typography size="xl" weight={7} color="purple" value="Our mission" tracking="tight" />
         <Typography
           size="7xl"
           color="black"
           weight={5}
-          extraClass="tracking-tight mt-6"
+          tracking="tight"
+          extraClass="mt-6"
           value={
             <>
               Adaptative Language Learning
@@ -33,7 +28,7 @@ const Mission = () => {
       </div>
 
       <img
-        src="./assets/FeatureList.png"
+        src={require('../../assets/FeatureList.png')}
         alt="Graphic"
         style={{ width: '688px', height: '656px' }}
       />
