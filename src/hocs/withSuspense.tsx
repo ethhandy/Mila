@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 
 import { Loader } from '../components';
 
-const withSuspense = (Component) => (props) => {
+const withSuspense = (Component: React.FC) => (props: JSX.IntrinsicAttributes) => {
   return (
     <Suspense fallback={<Loader />}>
       <Component {...props} />

@@ -1,15 +1,28 @@
 import cn from 'classnames';
+import React, { FC } from 'react';
 
-const Typography = ({
-  value = '',
-  color = '',
+export interface TypographyProps {
+  size: 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '7xl' | '8xl';
+  color: 'black' | 'white' | 'gray' | 'blue' | 'purple';
+  opacity?: number;
+  font?: 'DM' | 'Poppins';
+  weight?: number;
+  align?: 'left' | 'center' | 'right';
+  tracking?: 'tight' | 'tighter' | 'none';
+  value: string;
+  extraClass?: string;
+}
+
+const Typography: FC<TypographyProps> = ({
+  size,
+  color,
   opacity = 1,
-  weight = 4,
-  size = null,
-  align = '',
-  extraClass = '',
   font = 'DM',
-  tracking = ''
+  weight = 4,
+  align,
+  tracking,
+  value,
+  extraClass
 }) => {
   const sizeClass = cn(
     size === 'sm' ? 'text-sm max-sm:text-xs' : '',
@@ -66,6 +79,18 @@ const Typography = ({
       {value}
     </p>
   );
+};
+
+Typography.defaultProps = {
+  size: 'base',
+  color: 'black',
+  opacity: 1,
+  font: 'DM',
+  weight: 4,
+  align: 'left',
+  tracking: 'none',
+  value: '',
+  extraClass: ''
 };
 
 export default Typography;
