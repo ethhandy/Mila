@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { GLOBAL_STORE } from '../utils/constant';
+import { GLOBAL_STORE, SIGNUP_STORE } from '../utils/constant';
 
 const globalStore = (set) => ({
   width: window.innerWidth,
@@ -10,8 +10,10 @@ const globalStore = (set) => ({
   setHeight: (height) => set({ height })
 });
 
-const persistedGlobalStore = persist(globalStore, { name: GLOBAL_STORE });
+const signupStore = (set) => ({
+  currentPage: 1,
+  setCurrentPage: (currentPage) => set({ currentPage })
+});
 
-const useGlobalStore = create(persistedGlobalStore);
-
-export default useGlobalStore;
+export const useGlobalStore = create(persist(globalStore, { name: GLOBAL_STORE }));
+export const useSignupStore = create(persist(signupStore, { name: SIGNUP_STORE }));

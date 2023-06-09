@@ -1,6 +1,6 @@
 import { Button } from '../../elements/Button';
 import { Typography } from '../../elements/Typography';
-import useGlobalStore from '../../state/store';
+import { useGlobalStore } from '../../state/store';
 
 const Challenges = () => {
   const [width] = useGlobalStore((state) => [state.width]);

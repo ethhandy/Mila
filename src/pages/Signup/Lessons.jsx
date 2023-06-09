@@ -2,37 +2,31 @@ import { Typography } from '../../elements/Typography';
 import { Button } from '../../elements/Button';
 import { useSignupStore } from '../../state/store';
 
-const Welcome = () => {
+const Lessons = () => {
   const [setCurrentPage] = useSignupStore((state) => [state.setCurrentPage]);
 
   return (
-    <section className="h-screen w-screen flex items-center justify-center">
-      <div className="w-[460px] h-[467px] flex flex-col gap-6">
+    <section className="flex flex-col items-center h-screen w-screen justify-center gap-6">
+      <div className="h-[456px] w-[800px] flex flex-col gap-6">
         <div className="flex justify-center">
-          <img src="./assets/Signup/Hello.svg" alt="Hello" width={212} height={184} />
+          <img src="assets/Signup/Leassons.svg" alt="Courses" width={470} />
         </div>
+
         <Typography
           color="black"
           size="2xl"
           weight={6}
           align="center"
           font="Poppins"
-          value="Hello, I'm Mila!"
+          value="I have hundreds of lessons with excerpts from movies and a huge library of books"
         />
-        <Typography
-          color="black"
-          size="2xl"
-          weight={6}
-          align="center"
-          font="Poppins"
-          value="I'll show you the most fun way to learn languages*"
-        />
+
         <div className="flex justify-center">
           <Button
             color="purple"
             size="sm"
-            value={<Typography value="Let's get started" color="white" size="lg" />}
-            clickHandler={() => setCurrentPage(2)}
+            value={<Typography value="Next" color="white" size="lg" />}
+            clickHandler={() => setCurrentPage(7)}
             extraClass="w-96"
           />
         </div>
@@ -41,4 +35,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Lessons;

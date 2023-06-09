@@ -23,7 +23,7 @@ const Recommendation = () => {
             />
           </div>
 
-          <div className="w-24 h-24 rounded-full bg-[#FAB8C4] absolute right-0" />
+          <div className="w-24 h-24 rounded-full bg-pink-100 absolute right-0" />
         </div>
 
         <div className="grid grid-cols-3 mt-36">

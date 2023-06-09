@@ -1,7 +1,7 @@
 import cn from 'classnames';
 
 const IconButton = ({ size = '', color = '', clickHandler = () => {}, Icon = <></> }) => {
-  const effectClass = cn(color === 'purple' ? 'hover:bg-[#5956E9] text-white' : '');
+  const effectClass = cn(color === 'purple' ? 'hover:bg-purple-100 text-white' : '');
 
   const sizeClass = cn(size === 'sm' ? 'w-10 h-10' : '');
 

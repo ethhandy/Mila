@@ -37,6 +37,7 @@ const Download = () => {
             font="Poppins"
           />
         }
+        extraClass="shadow-2xl"
       />
     </section>
   );

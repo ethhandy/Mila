@@ -14,7 +14,7 @@ import Download from './Download';
 
 import './landing.css';
 
-import useGlobalStore from '../../state/store';
+import { useGlobalStore } from '../../state/store';
 
 const Landing = () => {
   const [width, height, setWidth, setHeight] = useGlobalStore((state) => [
@@ -77,11 +77,11 @@ const Landing = () => {
         className="relative"
       >
         <div
-          className="w-8 h-8 rounded-full bg-[#5956E9] absolute z-10"
+          className="w-8 h-8 rounded-full bg-purple-100 absolute z-10"
           style={{ top: -((133 * height) / 1024 + 16), left: (691 * width) / 1440 }}
         />
         <div
-          className="w-[180px] h-[180px] rounded-full bg-[#FAB8C4] absolute z-10"
+          className="w-[180px] h-[180px] rounded-full bg-pink-100 absolute z-10"
           style={{ top: -90, left: (790 * width) / 1440 }}
         />
         <Carousel

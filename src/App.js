@@ -10,7 +10,7 @@ function App() {
     <>
       <RouterProvider router={router} fallbackElement={<Loading />} />
     </>
-  )
+  );
 }
 
 export default App;

@@ -1,11 +1,16 @@
 import { FiSearch } from 'react-icons/fi';
 import { Button } from '../../elements/Button';
 import { Typography } from '../../elements/Typography';
+import { appLinks } from '../../utils/constant';
+import { useSignupStore } from '../../state/store';
 
 const Kit = () => {
+  const [setCurrentPage] = useSignupStore((state) => [state.setCurrentPage]);
+
   return (
     <div className="flex gap-x-10 items-center text-white">
       <FiSearch className="w-6 h-6" />
+
       <Button
         color="pink"
         size="md"
@@ -19,6 +24,9 @@ const Kit = () => {
             tracking="tighter"
           />
         }
+        isLink={true}
+        to={appLinks.signup}
+        clickHandler={() => setCurrentPage(1)}
       />
     </div>
   );
