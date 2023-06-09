@@ -22,13 +22,13 @@ const Typography = ({
     size === '8xl' ? 'text-8xl max-sm:text-5xl' : ''
   );
 
-  const colorTable = {
-    black: '#292930',
-    gray: '#999FAE',
-    blue: '#2522BA',
-    white: '#FFFFFF',
-    purple: '#5956E9'
-  };
+  const colorClass = cn(
+    color === 'black' ? 'text-black' : '',
+    color === 'white' ? 'text-white' : '',
+    color === 'gray' ? 'text-gray-100' : '',
+    color === 'blue' ? 'text-blue-100' : '',
+    color === 'purple' ? 'text-purple-100' : ''
+  );
 
   const weightTable = [
     '',
@@ -51,12 +51,12 @@ const Typography = ({
   return (
     <p
       style={{
-        color: color[0] === '#' ? color : colorTable[color],
         opacity,
         fontFamily: font === 'DM' ? "'DM Sans', sans-serif" : "'Poppins', sans-serif"
       }}
       className={cn(
         sizeClass,
+        colorClass,
         trackingClass,
         weightTable[weight],
         align === 'center' ? 'text-center' : '',

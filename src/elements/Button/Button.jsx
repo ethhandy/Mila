@@ -13,8 +13,8 @@ const Button = ({
 }) => {
   const effectClass = cn(
     color === 'white' ? 'bg-white shadow-2xl' : '',
-    color === 'pink' ? 'bg-[#FAB8C4] hover:bg-[#FFBFCF]' : '',
-    color === 'purple' ? 'bg-[#5956E9] hover:bg-[#5C5AED]' : ''
+    color === 'pink' ? 'bg-pink-100 hover:bg-pink-200' : '',
+    color === 'purple' ? 'bg-purple-100 hover:bg-purple-200' : ''
   );
 
   const sizeClass = cn(
