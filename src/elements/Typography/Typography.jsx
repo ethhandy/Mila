@@ -25,8 +25,8 @@ const Typography = ({
   const colorClass = cn(
     color === 'black' ? 'text-black' : '',
     color === 'white' ? 'text-white' : '',
-    color === 'gray' ? 'text-gray-100' : '',
-    color === 'blue' ? 'text-blue-100' : '',
+    color === 'gray' ? 'text-gray' : '',
+    color === 'blue' ? 'text-blue' : '',
     color === 'purple' ? 'text-purple-100' : ''
   );
 

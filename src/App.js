@@ -3,10 +3,14 @@ import { RouterProvider } from 'react-router';
 import { Loader } from './components';
 import { router } from './routes';
 
-import './index.css';
+const Loading = () => <Loader />;
 
 function App() {
-  return <RouterProvider router={router} fallbackElement={<Loader />} />;
+  return (
+    <>
+      <RouterProvider router={router} fallbackElement={<Loading />} />
+    </>
+  )
 }
 
 export default App;
