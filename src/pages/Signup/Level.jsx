@@ -23,8 +23,8 @@ const Level = () => {
         />
 
         <div className="flex flex-col gap-4">
-          {['Beginner', 'Intermediate', 'Advanced'].map((item) => (
-            <div className="flex justify-center">
+          {['Beginner', 'Intermediate', 'Advanced'].map((item, index) => (
+            <div className="flex justify-center" key={index}>
               <Button
                 color="white"
                 size="sm"

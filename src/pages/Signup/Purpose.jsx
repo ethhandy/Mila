@@ -30,8 +30,18 @@ const Purpose = () => {
               'Communication and making friends'
             ].map((item, index) => (
               <div key={index} className="flex gap-2 items-center hover:cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 rounded text-white border-gray-100" />
-                <Typography color="gray" size="base" font="Poppins" value={item} tracking="tight" />
+                <input
+                  id={index}
+                  type="checkbox"
+                  className="w-4 h-4 rounded text-white border-gray-100"
+                />
+                <label
+                  htmlFor={index}
+                  className="text-gray text-base tracking-tight"
+                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                >
+                  {item}
+                </label>
               </div>
             ))}
           </div>

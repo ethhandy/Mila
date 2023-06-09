@@ -21,8 +21,8 @@ const Interesting = () => {
           value="What is more interesting for you to start with?"
         />
         <div className="flex flex-col gap-4">
-          {['Courses', 'Books', 'All of above'].map((item) => (
-            <div className="flex justify-center">
+          {['Courses', 'Books', 'All of above'].map((item, index) => (
+            <div className="flex justify-center" key={index}>
               <Button
                 color="white"
                 size="sm"

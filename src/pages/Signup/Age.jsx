@@ -22,8 +22,8 @@ const Age = () => {
         />
 
         <div className="flex flex-col gap-2">
-          {['0-17', '18-21', '22-35', '36-50', '50+'].map((item) => (
-            <div className="flex justify-center">
+          {['0-17', '18-21', '22-35', '36-50', '50+'].map((item, index) => (
+            <div className="flex justify-center" key={index}>
               <Button
                 color="white"
                 size="sm"

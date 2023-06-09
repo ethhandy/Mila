@@ -22,7 +22,7 @@ const Signup = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, {});
+  }, []);
 
   return (
     <div className="flex flex-col relative">
