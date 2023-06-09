@@ -1,5 +1,5 @@
-import { Typography } from '../../components/Typography';
-import { GetStartedForm } from '../../components/Form';
+import { Typography } from '../../elements/Typography';
+import { GetStartedForm } from '../../elements/Form';
 
 const Banner = () => {
   return (

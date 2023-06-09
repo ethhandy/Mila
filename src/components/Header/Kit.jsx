@@ -1,6 +1,6 @@
 import { FiSearch } from 'react-icons/fi';
-import { Button } from '../../components/Button';
-import { Typography } from '../../components/Typography';
+import { Button } from '../../elements/Button';
+import { Typography } from '../../elements/Typography';
 
 const Kit = () => {
   return (

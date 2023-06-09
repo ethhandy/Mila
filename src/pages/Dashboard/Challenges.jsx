@@ -1,5 +1,5 @@
-import { Button } from '../../components/Button';
-import { Typography } from '../../components/Typography';
+import { Button } from '../../elements/Button';
+import { Typography } from '../../elements/Typography';
 import useGlobalStore from '../../state/store';
 
 const Challenges = () => {

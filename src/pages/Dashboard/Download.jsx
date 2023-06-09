@@ -1,5 +1,5 @@
-import { Typography } from '../../components/Typography';
-import { Button } from '../../components/Button';
+import { Typography } from '../../elements/Typography';
+import { Button } from '../../elements/Button';
 
 const Download = () => {
   return (

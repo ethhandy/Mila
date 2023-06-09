@@ -1,6 +1,10 @@
+import { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+import { Header, Footer } from '../../components';
+
+import Banner from './Banner';
 import Features from './Features';
 import Mission from './Mission';
 import Challenges from './Challenges';
@@ -8,12 +12,29 @@ import Advantage from './Advantage';
 import Recommendation from './Recommendation';
 import Download from './Download';
 
-import useGlobalStore from '../../state/store';
-
 import './landing.css';
 
+import useGlobalStore from '../../state/store';
+
 const Landing = () => {
-  const [width, height] = useGlobalStore((state) => [state.width, state.height]);
+  const [width, height, setWidth, setHeight] = useGlobalStore((state) => [
+    state.width,
+    state.height,
+    state.setWidth,
+    state.setHeight
+  ]);
+
+  const onResize = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', onResize);
+
+    return () => window.removeEventListener('resize', onResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const responsive = {
     superLargeDesktop: {
@@ -37,6 +58,18 @@ const Landing = () => {
 
   return (
     <>
+      <div
+        style={{
+          backgroundImage: 'url("./assets/Circle.png")',
+          height: Math.max(935, height + 98),
+          backgroundSize: `${width}px ${Math.max(935, height + 98)}px`
+        }}
+        className="bg-no-repeat bg-cover z-10 sticky"
+      >
+        <Header />
+        <Banner />
+      </div>
+
       <div
         style={{
           marginTop: '-98px'
@@ -73,6 +106,8 @@ const Landing = () => {
       <Advantage />
       <Recommendation />
       <Download />
+
+      <Footer />
     </>
   );
 };

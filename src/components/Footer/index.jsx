@@ -1,5 +1,5 @@
-import { Typography } from '../components/Typography';
-import { BackToTop } from '../components/Icon';
+import { Typography } from '../../elements/Typography';
+import { BackToTop } from '../../elements/Icon';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <div className="flex justify-center">
         <div className="w-[1040px] grid grid-cols-4">
-          <img src={require('../assets/Logo.png')} alt="Logo" height={53} />
+          <img src={require('../../assets/Logo.png')} alt="Logo" height={53} />
           {[
             ['Company', 'About us', 'Jobs', 'Press', 'Blog'],
             ['Support', 'Contact us', 'Cookies', 'Privacy & terms', 'Sitemap'],

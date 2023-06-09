@@ -1,4 +1,4 @@
-import { Typography } from '../../components/Typography';
+import { Typography } from '../../elements/Typography';
 
 const Mission = () => {
   return (

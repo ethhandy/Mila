@@ -1,7 +1,7 @@
-import { Typography } from '../../components/Typography';
-import { Robot } from '../../components/Icon';
+import { Typography } from '../../elements/Typography';
+import { Robot } from '../../elements/Icon';
 
-import useGlobalStore from '../..//state/store';
+import useGlobalStore from '../../state/store';
 
 const Advantage = () => {
   const width = useGlobalStore((state) => state.width);

@@ -1,5 +1,5 @@
-import { Message, Voice } from '../../components/Icon';
-import { Typography } from '../../components/Typography';
+import { Message, Voice } from '../../elements/Icon';
+import { Typography } from '../../elements/Typography';
 
 const Features = () => {
   return (

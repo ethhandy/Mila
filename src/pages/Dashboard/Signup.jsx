@@ -1,5 +1,5 @@
-import { GetStartedForm } from '../../components/Form';
-import { Typography } from '../../components/Typography';
+import { GetStartedForm } from '../../elements/Form';
+import { Typography } from '../../elements/Typography';
 import useGlobalStore from '../../state/store';
 
 const Signup = () => {
