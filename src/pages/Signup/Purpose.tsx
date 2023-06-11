@@ -31,12 +31,12 @@ const Purpose = () => {
             ].map((item, index) => (
               <div key={index} className="flex gap-2 items-center hover:cursor-pointer">
                 <input
-                  id={index}
+                  id={`${index}`}
                   type="checkbox"
                   className="w-4 h-4 rounded text-white border-gray-100"
                 />
                 <label
-                  htmlFor={index}
+                  htmlFor={`${index}`}
                   className="text-gray text-base tracking-tight"
                   style={{ fontFamily: "'Poppins', sans-serif" }}
                 >

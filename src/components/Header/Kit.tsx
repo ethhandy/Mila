@@ -1,4 +1,4 @@
-import { FiSearch } from 'react-icons/fi';
+// import { FiSearch } from 'react-icons/fi';
 import { Button } from '../../elements/Button';
 import { Typography } from '../../elements/Typography';
 import { appLinks } from '../../utils/constant';
