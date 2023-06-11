@@ -8,8 +8,8 @@ const Kit = () => {
   const [setCurrentPage] = useSignupStore((state) => [state.setCurrentPage]);
 
   return (
-    <div className="flex gap-x-10 items-center text-white">
-      <FiSearch className="w-6 h-6" />
+    <div className="flex gap-x-10 items-center text-black">
+      {/* <FiSearch className="w-6 h-6" /> */}
 
       <Button
         color="pink"
@@ -19,6 +19,24 @@ const Kit = () => {
             color="blue"
             size="base"
             value="Get Started"
+            weight={5}
+            font="Poppins"
+            tracking="tighter"
+          />
+        }
+        isLink={true}
+        to={appLinks.signup}
+        clickHandler={() => setCurrentPage(1)}
+      />
+
+      <Button
+        color="white"
+        size="md"
+        value={
+          <Typography
+            color="blue"
+            size="base"
+            value="Login"
             weight={5}
             font="Poppins"
             tracking="tighter"
