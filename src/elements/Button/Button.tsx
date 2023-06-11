@@ -12,9 +12,19 @@ export interface ButtonProps {
   to?: string;
   clickHandler?: ClickHandler;
   extraClass?: string;
+  type?: 'button' | 'submit';
 }
 
-const Button: FC<ButtonProps> = ({ value, size, color, to, clickHandler, isLink, extraClass }) => {
+const Button: FC<ButtonProps> = ({
+  value,
+  size,
+  color,
+  to,
+  clickHandler,
+  isLink,
+  extraClass,
+  type = 'button'
+}) => {
   const effectClass = cn(
     color === 'white' ? 'bg-white' : '',
     color === 'pink' ? 'bg-pink-300 hover:bg-pink-200' : '',
@@ -32,7 +42,7 @@ const Button: FC<ButtonProps> = ({ value, size, color, to, clickHandler, isLink,
       {value}
     </a>
   ) : (
-    <button className={cn(effectClass, sizeClass, extraClass)} onClick={clickHandler}>
+    <button className={cn(effectClass, sizeClass, extraClass)} onClick={clickHandler} type={type}>
       {value}
     </button>
   );
@@ -44,6 +54,7 @@ Button.defaultProps = {
   color: 'indigo',
   isLink: false,
   clickHandler: () => {},
-  extraClass: ''
+  extraClass: '',
+  type: 'button'
 };
 export default Button;

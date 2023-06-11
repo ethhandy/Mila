@@ -1,7 +1,22 @@
-import { useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 import { BiShow, BiHide } from 'react-icons/bi';
 
-const TextField = ({ placeholder = '', Icon = <></>, type = 'text' }) => {
+type RegisterHandler = (name: string) => object;
+export interface TextFieldProps {
+  placeholder?: string;
+  Icon?: ReactNode;
+  type?: string;
+  name?: string;
+  register?: RegisterHandler;
+}
+
+const TextField: FC<TextFieldProps> = ({
+  placeholder,
+  Icon,
+  type,
+  name = '',
+  register = (name: string): any => {}
+}) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -11,6 +26,7 @@ const TextField = ({ placeholder = '', Icon = <></>, type = 'text' }) => {
         placeholder={placeholder}
         className="pl-12 border border-gray rounded-lg text-base h-12 w-96 font-medium"
         style={{ fontFamily: "'Poppins', sans-serif" }}
+        {...register(name)}
       />
       <div className="absolute w-12 h-12 flex justify-center items-center">{Icon}</div>
       {type === 'password' ? (
@@ -24,6 +40,12 @@ const TextField = ({ placeholder = '', Icon = <></>, type = 'text' }) => {
       )}
     </div>
   );
+};
+
+TextField.defaultProps = {
+  placeholder: 'Input here',
+  type: 'text',
+  Icon: <></>
 };
 
 export default TextField;
