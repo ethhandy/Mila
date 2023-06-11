@@ -4,7 +4,7 @@ const Mission = () => {
   return (
     <section style={{ height: 921 }} className="flex justify-center items-center">
       <div className="flex flex-col w-[500px] ml-44">
-        <Typography size="xl" weight={7} color="purple" value="Our mission" tracking="tight" />
+        <Typography size="xl" weight={7} color="indigo" value="Our mission" tracking="tight" />
         <Typography
           size="7xl"
           color="black"

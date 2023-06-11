@@ -75,6 +75,20 @@ module.exports = {
         700: 'var(--color-gray-700)',
         800: 'var(--color-gray-800)',
         900: 'var(--color-gray-900)'
+      },
+
+      blue: {
+        DEFAULT: 'var(--color-blue-500)',
+        50: 'var(--color-blue-50)',
+        100: 'var(--color-blue-100)',
+        200: 'var(--color-blue-200)',
+        300: 'var(--color-blue-300)',
+        400: 'var(--color-blue-400)',
+        500: 'var(--color-blue-500)',
+        600: 'var(--color-blue-600)',
+        700: 'var(--color-blue-700)',
+        800: 'var(--color-blue-800)',
+        900: 'var(--color-blue-900)'
       }
     }
   },

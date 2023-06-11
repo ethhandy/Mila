@@ -13,7 +13,7 @@ const Challenges = () => {
       className="bg-auto bg-no-repeat bg-center pt-40 pr-24 flex h-[758px] relative z-10"
     >
       <div className="w-[432px] flex flex-col" style={{ marginLeft: 714 + (width - 1250) / 2 }}>
-        <Typography value="You’re not alone" weight={7} size="xl" color="purple" tracking="tight" />
+        <Typography value="You’re not alone" weight={7} size="xl" color="indigo" tracking="tight" />
         <Typography
           value={
             <>

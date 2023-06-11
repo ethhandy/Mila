@@ -81,7 +81,7 @@ const Landing = () => {
           style={{ top: -((133 * height) / 1024 + 16), left: (691 * width) / 1440 }}
         />
         <div
-          className="w-[180px] h-[180px] rounded-full bg-pink-100 absolute z-10"
+          className="w-[180px] h-[180px] rounded-full bg-pink-300 absolute z-10"
           style={{ top: -90, left: (790 * width) / 1440 }}
         />
         <Carousel

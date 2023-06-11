@@ -1,6 +1,6 @@
 import { GetStartedForm } from '../../elements/Form';
 import { Typography } from '../../elements/Typography';
-import useGlobalStore from '../../state/store';
+import { useGlobalStore } from '../../state/store';
 
 const Signup = () => {
   const [width] = useGlobalStore((state) => [state.width]);

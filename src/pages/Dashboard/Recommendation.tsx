@@ -27,6 +27,7 @@ const Recommendation = () => {
               color="black"
               weight={5}
               tracking="tighter"
+              size="4xl"
               extraClass="text-[40px] w-[230px]"
             />
           </div>
@@ -37,7 +38,7 @@ const Recommendation = () => {
                 name: 'Emily',
                 said: 'I’ve used many English apps, but I think Speak is the best fit for me! I think I’m beginning to comprehend (listening skills) as I’m speaking now. ',
                 totalName: 'Emily',
-                color: 'purple',
+                color: 'pink',
                 path: 'Emily'
               },
               {

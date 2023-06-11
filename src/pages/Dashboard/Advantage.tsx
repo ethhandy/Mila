@@ -44,7 +44,7 @@ const Advantage = () => {
         />
       </div>
       <div
-        className="flex flex-col rounded-full bg-purple-100 absolute pl-20 pr-16 gap-7 pr-18 pt-24"
+        className="flex flex-col rounded-full bg-indigo-500 absolute pl-20 pr-16 gap-7 pr-18 pt-24"
         style={{ marginLeft: 735 * ratio, width: 505, height: 505, bottom: -100 }}
       >
         {Robot}
