@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import cn from 'classnames';
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 
 type ClickHandler = () => void;
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  value: string;
+export interface ButtonProps {
+  value: string | ReactNode;
   size?: 'sm' | 'md' | 'full';
   color?: 'white' | 'pink' | 'purple';
   isLink?: boolean;

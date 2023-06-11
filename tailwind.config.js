@@ -27,6 +27,14 @@ module.exports = {
         ...colors.pink,
         100: '#FAB8C4',
         200: '#FFBFCF'
+      },
+      green: {
+        ...colors.green,
+        DEFAULT: '#90D0B1'
+      },
+      red: {
+        ...colors.red,
+        DEFAULT: '#C75C6F'
       }
     }
   },

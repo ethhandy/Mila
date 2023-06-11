@@ -1,5 +1,4 @@
 import Logo from './Logo';
-// import PageMenu from './PageMenu';
 import Kit from './Kit';
 
 const Header = () => {
@@ -8,7 +7,6 @@ const Header = () => {
       <nav className="flex items-center justify-between">
         <div className="flex gap-20 items-center">
           <Logo />
-          {/* <PageMenu /> */}
         </div>
         <Kit />
       </nav>

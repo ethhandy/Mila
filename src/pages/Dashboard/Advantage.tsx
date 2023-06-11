@@ -11,7 +11,7 @@ const Advantage = () => {
     <section
       style={{
         backgroundImage: 'url("./assets/Advantage.png")',
-        height: 980 * ratio,
+        height: Number(980 * ratio),
         marginTop: '-65px'
       }}
       className="bg-cover bg-no-repeat relative"
@@ -28,6 +28,7 @@ const Advantage = () => {
         <Typography
           value="Learn Faster"
           color="blue"
+          size="8xl"
           weight={7}
           tracking="tight"
           extraClass="text-[144px]"
@@ -36,6 +37,7 @@ const Advantage = () => {
         <Typography
           value="with Mila"
           color="white"
+          size="8xl"
           weight={7}
           tracking="tight"
           extraClass="text-[144px] -mt-8"

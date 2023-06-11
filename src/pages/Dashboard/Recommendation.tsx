@@ -6,13 +6,7 @@ const Recommendation = () => {
       <div className="w-[1440px] pl-52 pr-20">
         <div className="flex mt-[208px] relative">
           <div className="flex gap-6 flex-col">
-            <Typography
-              value="We are famous"
-              color="#C75C6F"
-              size="xl"
-              weight={7}
-              tracking="tight"
-            />
+            <Typography value="We are famous" color="pink" size="xl" weight={7} tracking="tight" />
             <Typography
               value="Our reviews speak for themselves"
               color="black"
@@ -43,14 +37,14 @@ const Recommendation = () => {
                 name: 'Emily',
                 said: 'I’ve used many English apps, but I think Speak is the best fit for me! I think I’m beginning to comprehend (listening skills) as I’m speaking now. ',
                 totalName: 'Emily',
-                color: '#5956E9',
+                color: 'purple',
                 path: 'Emily'
               },
               {
                 name: 'Bento',
                 said: 'Mila makes me practice speaking what I’ve learned which helps me remember better. It’s seriously the best.',
                 totalName: 'Emily',
-                color: '#5956E9',
+                color: 'red',
                 borderColor: '#C75C6F',
                 path: 'Bento'
               },
@@ -58,14 +52,14 @@ const Recommendation = () => {
                 name: 'Tam M.',
                 said: 'I’ve been using it consistently because it’s easy to understand and the explanations are great!',
                 totalName: 'Tran Mau Tri Tam',
-                color: '#C75C6F',
+                color: 'red',
                 path: 'Bento'
               },
               {
                 name: 'Laura',
                 said: 'I’ve always stopped after the 3rd day (when starting something new), but I used this (app) everyday. The content wasn’t boring but rather fun. ',
                 totalName: 'Laura',
-                color: '#90D0B1',
+                color: 'green',
                 path: 'Laura'
               }
             ].map((person, index) => (

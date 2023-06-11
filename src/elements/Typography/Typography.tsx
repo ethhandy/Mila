@@ -1,15 +1,15 @@
 import cn from 'classnames';
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 
 export interface TypographyProps {
-  size: 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '7xl' | '8xl';
-  color: 'black' | 'white' | 'gray' | 'blue' | 'purple';
+  size?: 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '7xl' | '8xl';
+  color?: 'black' | 'white' | 'gray' | 'blue' | 'purple' | 'red' | 'green' | 'pink';
   opacity?: number;
   font?: 'DM' | 'Poppins';
   weight?: number;
   align?: 'left' | 'center' | 'right';
   tracking?: 'tight' | 'tighter' | 'none';
-  value: string;
+  value: string | ReactNode;
   extraClass?: string;
 }
 
