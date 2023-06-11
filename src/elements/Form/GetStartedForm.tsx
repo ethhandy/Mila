@@ -17,7 +17,7 @@ const GetStarted = ({ extraClass = '' }) => {
       </div>
 
       <Button
-        color="purple"
+        color="indigo"
         size="md"
         value={
           <Typography color="white" size="base" value="Get started" weight={5} font="Poppins" />

@@ -38,7 +38,7 @@ const Challenges = () => {
         />
 
         <Button
-          color="purple"
+          color="indigo"
           size="md"
           value={
             <Typography

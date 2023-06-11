@@ -7,7 +7,7 @@ type ClickHandler = () => void;
 export interface ButtonProps {
   value: string | ReactNode;
   size?: 'sm' | 'md' | 'full';
-  color?: 'white' | 'pink' | 'purple';
+  color?: 'white' | 'pink' | 'indigo';
   isLink?: boolean;
   to?: string;
   clickHandler?: ClickHandler;
@@ -17,8 +17,8 @@ export interface ButtonProps {
 const Button: FC<ButtonProps> = ({ value, size, color, to, clickHandler, isLink, extraClass }) => {
   const effectClass = cn(
     color === 'white' ? 'bg-white' : '',
-    color === 'pink' ? 'bg-pink-100 hover:bg-pink-200' : '',
-    color === 'purple' ? 'bg-purple-100 hover:bg-purple-200' : ''
+    color === 'pink' ? 'bg-pink-300 hover:bg-pink-200' : '',
+    color === 'indigo' ? 'bg-indigo hover:bg-indigo-700' : ''
   );
 
   const sizeClass = cn(
@@ -41,7 +41,7 @@ const Button: FC<ButtonProps> = ({ value, size, color, to, clickHandler, isLink,
 Button.defaultProps = {
   value: 'Button',
   size: 'sm',
-  color: 'purple',
+  color: 'indigo',
   isLink: false,
   clickHandler: () => {},
   extraClass: ''

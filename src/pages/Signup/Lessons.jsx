@@ -23,7 +23,7 @@ const Lessons = () => {
 
         <div className="flex justify-center">
           <Button
-            color="purple"
+            color="indigo"
             size="sm"
             value={<Typography value="Next" color="white" size="lg" />}
             clickHandler={() => setCurrentPage(7)}

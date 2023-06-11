@@ -24,7 +24,7 @@ const Time = () => {
         <div className="flex flex-col gap-2">
           <div className="flex justify-center">
             <Button
-              color="purple"
+              color="indigo"
               size="sm"
               value={<Typography value="Set reminder" color="white" size="lg" />}
               clickHandler={() => setCurrentPage(9)}
