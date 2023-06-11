@@ -5,6 +5,7 @@ import withSuspense from '../hocs/withSuspense';
 
 const Dashboard = withSuspense(lazy(() => import('../pages/Dashboard')));
 const Signup = withSuspense(lazy(() => import('../pages/Signup')));
+const Login = withSuspense(lazy(() => import('../pages/Login')));
 
 export const router = createBrowserRouter([
   {
@@ -14,5 +15,9 @@ export const router = createBrowserRouter([
   {
     path: appLinks.signup,
     element: <Signup />
+  },
+  {
+    path: appLinks.login,
+    element: <Login />
   }
 ]);

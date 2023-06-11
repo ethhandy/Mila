@@ -3,7 +3,17 @@ import React, { FC, ReactNode } from 'react';
 
 export interface TypographyProps {
   size?: 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '7xl' | '8xl';
-  color?: 'black' | 'white' | 'gray' | 'blue' | 'indigo' | 'red' | 'green' | 'pink' | string;
+  color?:
+    | 'black'
+    | 'white'
+    | 'gray'
+    | 'blue'
+    | 'indigo'
+    | 'red'
+    | 'green'
+    | 'pink'
+    | 'yellow'
+    | string;
   opacity?: number;
   font?: 'DM' | 'Poppins';
   weight?: number;
@@ -43,7 +53,8 @@ const Typography: FC<TypographyProps> = ({
     color === 'blue' ? 'text-blue-900' : '',
     color === 'pink' ? 'text-pink-300' : '',
     color === 'green' ? 'text-green-600' : '',
-    color === 'indigo' ? 'text-indigo' : ''
+    color === 'indigo' ? 'text-indigo' : '',
+    color === 'yellow' ? 'text-yellow-200' : ''
   );
 
   const weightTable = [

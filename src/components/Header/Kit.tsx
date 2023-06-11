@@ -43,7 +43,7 @@ const Kit = () => {
           />
         }
         isLink={true}
-        to={appLinks.signup}
+        to={appLinks.login}
         clickHandler={() => setCurrentPage(1)}
       />
     </div>
