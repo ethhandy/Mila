@@ -7,6 +7,7 @@ export interface TextFieldProps {
   Icon?: ReactNode;
   type?: string;
   name?: string;
+  fullWidth?: boolean;
   register?: RegisterHandler;
 }
 
@@ -15,6 +16,7 @@ const TextField: FC<TextFieldProps> = ({
   Icon,
   type,
   name = '',
+  fullWidth = false,
   register = (name: string): any => {}
 }) => {
   const [show, setShow] = useState(false);
@@ -24,7 +26,9 @@ const TextField: FC<TextFieldProps> = ({
       <input
         type={type === 'password' ? (show ? 'text' : 'password') : type}
         placeholder={placeholder}
-        className="pl-12 border border-gray rounded-lg text-base h-12 w-96 font-medium"
+        className={`pl-12 border border-gray rounded-lg text-base h-12 ${
+          fullWidth ? 'w-full' : 'w-96'
+        } font-medium`}
         style={{ fontFamily: "'Poppins', sans-serif" }}
         {...register(name)}
       />

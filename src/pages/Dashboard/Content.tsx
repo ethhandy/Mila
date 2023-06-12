@@ -21,8 +21,8 @@ const ListItem: FC<ListItemInterface> = ({ heading, content }) => {
       <div className="flex items-center gap-4">
         <Typography value={heading} color="black" size="xl" tracking="tight" weight={6} />
         <Button
-          value={<Typography value="START" color="indigo" size="base" weight={5} />}
-          extraClass="border-indigo border px-4 hover:bg-gray-100"
+          value={<Typography value="START" color="blue" size="base" weight={5} />}
+          extraClass="border-blue-900 border px-4 hover:bg-gray-100"
           color="white"
           size="sm"
         />
@@ -68,9 +68,9 @@ const Content = () => {
         <Typography
           value="Welcome to Mila Ai "
           size="4xl"
-          weight={6}
+          weight={9}
           align="center"
-          color="indigo"
+          color="black"
         />
         <Typography
           value="Start asking your questions, selecting the topic:"
