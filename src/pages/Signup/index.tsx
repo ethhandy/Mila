@@ -13,16 +13,24 @@ import QuickSignup from './QuickSignup';
 import SignupWithEmail from './SignupWithEmail';
 import { Steps } from '../../components/Steps';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router';
+import { useAuthStore } from '../../state/store';
 
 const Signup = () => {
   const [currentPage, setCurrentPage] = useSignupStore((state) => [
     state.currentPage,
     state.setCurrentPage
   ]);
+  const navigate = useNavigate();
+  const [isAuthenicated] = useAuthStore((state) => [state.isAuthenicated]);
 
   useEffect(() => {
     setCurrentPage(1);
   }, []);
+
+  useEffect(() => {
+    if (isAuthenicated) navigate('/dashboard');
+  }, [isAuthenicated]);
 
   return (
     <div className="flex flex-col relative">

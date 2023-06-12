@@ -2,7 +2,7 @@ import Logo from '../../components/Header/Logo';
 import { HiOutlineMail } from 'react-icons/hi';
 import { RiKey2Fill } from 'react-icons/ri';
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
+import Cookies from 'js-cookie';
 
 import { TextField } from '../../elements/TextField';
 import { Typography } from '../../elements/Typography';
@@ -10,17 +10,42 @@ import { Button } from '../../elements/Button';
 
 import { appLinks } from '../../utils/constant';
 
+import api from '../../services/restApi';
+
+import { useAuthStore } from '../../state/store';
+
+import { useNavigate } from 'react-router';
+
 const Right = () => {
   const { register, handleSubmit } = useForm();
-  const [data, setData] = useState('');
+  const [setAuthentication] = useAuthStore((state) => [state.setAuthenication]);
+  const navigate = useNavigate();
+
+  const handleLogin = async (data: string) => {
+    try {
+      const { email, password } = JSON.parse(data);
+
+      const response = await api.users.login({ username: email, password });
+      const { access_token } = response; // Get the access_token from the login response
+      const expirationTime = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+      const options = { expires: expirationTime };
+
+      Cookies.set('access_token', access_token, options);
+      console.log('Logged in');
+
+      setAuthentication(true);
+
+      navigate('/dashboard');
+    } catch (error) {
+      console.error(error); // Handle API call errors
+    }
+  };
 
   return (
     <section className="flex h-screen items-center justify-center bg-gray-200">
       <form
         className="flex flex-col gap-6 bg-white border border-gray-50 w-[400px] p-4 rounded-md"
-        onSubmit={handleSubmit((data) => {
-          setData(JSON.stringify(data));
-        })}
+        onSubmit={handleSubmit((data) => handleLogin(JSON.stringify(data)))}
       >
         <div className="w-36">
           <Logo />

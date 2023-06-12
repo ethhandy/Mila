@@ -1,16 +1,18 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import { appLinks } from '../utils/constant';
-import withSuspense from '../hocs/withSuspense';
+import { withSuspense, withAuth } from '../hocs';
+import { useAuthStore } from '../state/store';
 
-const Dashboard = withSuspense(lazy(() => import('../pages/Dashboard')));
+const Welcome = withSuspense(lazy(() => import('../pages/Welcome')));
 const Signup = withSuspense(lazy(() => import('../pages/Signup')));
 const Login = withSuspense(lazy(() => import('../pages/Login')));
+const Dashboard = withAuth(withSuspense(lazy(() => import('../pages/Dashboard'))));
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Dashboard />
+    element: <Welcome />
   },
   {
     path: appLinks.signup,
@@ -19,5 +21,9 @@ export const router = createBrowserRouter([
   {
     path: appLinks.login,
     element: <Login />
+  },
+  {
+    path: appLinks.dashboard,
+    element: <Dashboard />
   }
 ]);
